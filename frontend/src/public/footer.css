@@ -1,0 +1,52 @@
+.footer-bg {
+  height: 40vh;
+  background: #2d3436;
+}
+
+.footer-top {
+  height: 20vh;
+  margin-top: 1rem;
+}
+
+.footer-topic {
+  color: #adadad;
+  font-size: 0.75rem;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.footer-subtext {
+  text-decoration: none;
+  color: #74b9ff;
+  font-size: 1rem;
+  margin: 1rem 0;
+  display: block;
+}
+
+#footer-email {
+  color: #74b9ff;
+  font-weight: 800;
+}
+
+.left-col {
+  padding-left: 5vw;
+}
+
+.left-col-right {
+  padding-right: 15vw;
+}
+
+.send-btn {
+  background-color: #74b9ff;
+  height: 9vh;
+  width: 12vw;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+button a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: white;
+}

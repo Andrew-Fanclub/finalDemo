@@ -1,0 +1,32 @@
+{
+  "name": "nodeend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": " && exit 1",
+    "start": "node main.js",
+    "dev": "nodemon main.js"
+  },
+  "author": "afcplushies",
+  "license": "ISC",
+  "dependencies": {
+    "@types/connect-timeout": "^0.0.36",
+    "@types/express": "^4.17.13",
+    "connect": "^3.7.0",
+    "connect-timeout": "^1.9.0",
+    "cross-env": "5.0.5",
+    "express": "^4.17.2",
+    "http-proxy-middleware": "^2.0.3",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.7.2",
+    "nodemon": "^2.0.15",
+    "yarn": "^1.22.17"
+  },
+  "devDependencies": {
+    "@types/connect-timeout": "^0.0.36",
+    "@types/express": "^4.17.13",
+    "connect-timeout": "^1.9.0",
+    "nodemailer": "^6.7.2"
+  }
+}

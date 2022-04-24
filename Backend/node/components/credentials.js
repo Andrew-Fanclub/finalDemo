@@ -1,0 +1,1 @@
+module.exports = {cookieSecret: 'life is a high way kachow'};

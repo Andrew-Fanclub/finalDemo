@@ -1,0 +1,22 @@
+.navbar-dark .navbar-nav > .navi {
+  color: #74b9ff;
+}
+
+.navbar-dark .navbar-nav > .navi:hover {
+  color: #a4cdf7;
+}
+
+.dots {
+  font-size: 1.5rem;
+  color: #fdcb6e;
+}
+
+.navbar-brand img {
+  width: 7.5rem;
+}
+
+@media screen and (max-width: 992px) {
+  .dots {
+    display: none;
+  }
+}

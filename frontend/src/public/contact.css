@@ -1,0 +1,88 @@
+.form-container {
+  display: block;
+  height: 75vh;
+  width: 95vw;
+}
+
+.contactTitle {
+  color: #0984e3;
+  text-shadow: 0 1.5px white;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40vw;
+  margin: 0 auto;
+}
+
+.submit-btn {
+  background-color: #74b9ff;
+  color: white;
+  height: 8vh;
+  width: 10vw;
+  font-weight: 700;
+  border-radius: 10px;
+  float: right;
+}
+
+.message {
+  height: 25vh;
+  margin-bottom: 1rem;
+}
+
+.form-control::placeholder {
+  color: #74b9ff;
+}
+
+.form-control {
+  border: none;
+  color: #74b9ff;
+  border-radius: 10px;
+  font-size: 1.25rem;
+}
+
+.form-email-icon {
+  background: no-repeat url("../images/FormImg/Normal/envelope-regular.svg");
+}
+
+.form-email-icon:focus {
+  background: no-repeat url("../images/FormImg/Hover/envelope-hover.svg");
+}
+
+.form-user-icon {
+  background: no-repeat url("../images/FormImg/Normal/user-regular.svg");
+}
+
+.form-user-icon:focus {
+  background: no-repeat url("../images/FormImg/Hover/user-hover.svg");
+}
+
+.form-email-icon,
+.form-email-icon:focus,
+.form-user-icon,
+.form-user-icon:focus {
+  background-size: 5%;
+  background-position: 95% 50%;
+  background-color: rgba(156, 156, 156, 0.24);
+  color: #74b9ff;
+}
+
+.form-msg-icon {
+  background: no-repeat url("../images/FormImg/Normal/message-regular.svg");
+}
+
+.form-msg-icon:focus {
+  background: no-repeat url("../images/FormImg/Hover/message-hover.svg");
+}
+
+.form-msg-icon,
+.form-msg-icon:focus {
+  background-size: 2.75%;
+  background-position: 98.5% 5%;
+  background-color: rgba(156, 156, 156, 0.24);
+  color: #74b9ff;
+}

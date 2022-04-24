@@ -1,0 +1,81 @@
+.bg {
+  background: no-repeat url("../images/header.png");
+  background-color: #181818;
+  background-position: top right;
+  background-size: 90vw 100vh;
+}
+.title {
+  color: #0984e3;
+  text-shadow: 0 1.5px white;
+  font-size: 4rem;
+  text-align: center;
+}
+.midWord {
+  color: #fdcb6e;
+}
+.titleBottomText {
+  color: #0984e3;
+  text-align: center;
+  font-weight: 700;
+}
+.headerContent {
+  width: 90vw;
+  height: 80vh;
+  margin: 0 auto;
+}
+
+.searchContent {
+  width: 90vw;
+  height: 100vh;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 7rem;
+}
+
+.formContent {
+  margin-bottom: 3rem;
+}
+
+.searchBox {
+  box-sizing: border-box;
+  border: 0.1rem solid #d7d7d7;
+  border-radius: 10px 0 0 10px;
+  height: 2.5rem;
+  width: 50vw;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.searchBox::placeholder {
+  color: #d7d7d7;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+
+.searchBarBtn {
+  font-size: 2rem;
+  padding: 0 1rem;
+  margin-left: 0;
+  border: none;
+  background: url(../images/howWorksImg/Search.png) no-repeat;
+  background-position: center;
+  background-size: 50% 50%;
+  width: 3rem;
+  height: 2.5rem;
+  background-color: #74b9ff;
+  vertical-align: middle;
+  border-radius: 0 10px 10px 0;
+}
+
+.plushContainer {
+  margin: 0 auto;
+}
+
+.page-link {
+  color: #0984e3;
+}
+
+.page-item.active .page-link {
+  background-color: #0984e3;
+  border-color: #0984e3;
+}

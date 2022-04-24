@@ -1,0 +1,36 @@
+.subTitle {
+  color: #fdcb6e;
+  margin-left: 2rem;
+}
+
+.text {
+  color: white;
+  margin-left: 3rem;
+}
+
+.square {
+  height: 11rem;
+  width: 10.5rem;
+  background-color: grey;
+}
+
+.constraint {
+  width: 95vw;
+}
+
+.team {
+  height: 90vh;
+}
+
+.teamText {
+  color: white;
+}
+
+.teamTextBold {
+  color: #0984e3;
+}
+
+img.team {
+  height: 11rem;
+  width: 10.5rem;
+}

@@ -1,0 +1,30 @@
+.plushContainer {
+  width: 15vw;
+  height: 27vh;
+  color: black;
+  background-color: #c4c4c4;
+  text-align: start;
+}
+
+.plushContainer img {
+  width: 15vw;
+  height: 15vh;
+}
+
+.plushContainer p,
+.dynamic-star-rating {
+  margin-bottom: 0rem;
+  padding-left: 0.5rem;
+}
+
+.plushTitle {
+  font-size: 1.25rem;
+}
+
+.plushPrice {
+  font-weight: 800;
+}
+
+.plushShipping {
+  font-size: 0.7rem;
+}

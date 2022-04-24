@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.dc94c62a.css",
+    "main.js": "/static/js/main.d75f276d.js",
+    "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
+    "static/media/catherine.jpg": "/static/media/catherine.bd5a712ec5b1fda2e265.jpg",
+    "static/media/mjShoot.jpg": "/static/media/mjShoot.7f8b13a86b255591f6e5.jpg",
+    "static/media/message-hover.svg": "/static/media/message-hover.19ff4702b3a1d7448979.svg",
+    "static/media/message-regular.svg": "/static/media/message-regular.16977c92a2a26f09c75a.svg",
+    "static/media/envelope-hover.svg": "/static/media/envelope-hover.3b30ce47ca64d502b3bf.svg",
+    "static/media/envelope-regular.svg": "/static/media/envelope-regular.98e06a9ad3c051fb2cd6.svg",
+    "static/media/user-hover.svg": "/static/media/user-hover.07e8dd6cc8298970b250.svg",
+    "static/media/user-regular.svg": "/static/media/user-regular.dbc02c96073c55b39947.svg",
+    "index.html": "/index.html",
+    "main.dc94c62a.css.map": "/static/css/main.dc94c62a.css.map",
+    "main.d75f276d.js.map": "/static/js/main.d75f276d.js.map",
+    "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc94c62a.css",
+    "static/js/main.d75f276d.js"
+  ]
+}
