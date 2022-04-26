@@ -35,7 +35,7 @@ app.get('/', (req, res) => {
 });
 
 // Mailer section for contact page
-app.post('/process?contactUs', function(req, res){
+app.post('/process', function(req, res){
     const mailer = require('nodemailer');
     const smtp = require('nodemailer-smtp-transport');
     async function mailjet() {
@@ -65,7 +65,7 @@ app.post('/process?contactUs', function(req, res){
             })*/
         console.log(json);
     }
-    res.end('Thank you for your message! The message will now be under review.');
+    res.redirect(303, path.join('/var/www/html/build/index.html'));
     mailjet();
 })
 

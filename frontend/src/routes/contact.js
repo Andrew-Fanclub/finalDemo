@@ -15,7 +15,7 @@ function Contact() {
             </nav>
             <div className="form-container mt-5 mb-3">
                 <h1 className="contactTitle mb-5">Contact<img src={Logo} alt="logo" className='logo'/></h1>
-                <form className="contact-form" action='/process?form=contactus'>
+                <form className="contact-form" action='/process?form=contactus' method="POST">
                     <div className="row mb-4">
                         <div className="col">
                             <input type="text" placeholder="Your Name" className="form-user-icon form-control name" name='name' />
