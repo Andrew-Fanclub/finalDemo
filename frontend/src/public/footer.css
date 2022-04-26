@@ -1,5 +1,5 @@
 .footer-bg {
-  height: 40vh;
+  height: 70vh;
   background: #2d3436;
 }
 
@@ -49,4 +49,10 @@ button a {
   font-size: 0.9rem;
   text-decoration: none;
   color: white;
+}
+
+@media only screen and (max-width: 414px) {
+  .send-btn {
+    width: auto;
+  }
 }

@@ -1,5 +1,7 @@
+img.logo {
+  width: 13.5rem;
+}
 .form-container {
-  display: block;
   height: 75vh;
   width: 95vw;
 }
@@ -85,4 +87,22 @@
   background-position: 98.5% 5%;
   background-color: rgba(156, 156, 156, 0.24);
   color: #74b9ff;
+}
+
+@media only screen and (max-width: 414px) {
+  .message {
+    height: 15rem;
+  }
+  .name {
+    width: 10rem;
+  }
+  .email {
+    width: 10rem;
+  }
+  .submit-btn {
+    width: auto;
+  }
+  footer.contactFooter {
+    padding-top: 20rem;
+  }
 }

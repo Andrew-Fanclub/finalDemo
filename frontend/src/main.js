@@ -225,14 +225,17 @@ function Main() {
 
     return (
         <div className='bg'>
+            <head>
+                <title>The Plushie Web Scraper You've Been Waiting For</title>
+            </head>
             <nav>
                 <Navigation />
             </nav>
             <div className="headerContent mb-5">
                 <h1 className='title'>Find the <span className="midWord">perfect</span> plushie</h1>
                 <h1 className='titleBottomText'>for you and others!</h1>
-                <Carousel imageList={slides} autoplay={true} interval={3000} showArrows={false} className='center' />
             </div>
+            <Carousel imageList={slides} autoplay={true} interval={3000} showArrows={false} className='center' />
             <div className="searchContent" onSubmit={searchHandler}>
                 <form className="formContent">
                     <input className="searchBox" type="text" placeholder='Panda Plushie' />
@@ -259,7 +262,7 @@ function Main() {
                     breakLinkClassName={'page-link'}
                     activeClassName={'active'} />
             </div>
-            <footer>
+            <footer className='mainFooter'>
                 <Footer />
             </footer>
         </div>

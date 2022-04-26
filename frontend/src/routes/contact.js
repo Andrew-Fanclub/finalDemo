@@ -2,22 +2,26 @@ import React from 'react';
 import Navigation from '../components/navbar';
 import Footer from '../components/footer';
 import "../public/contact.css";
+import Logo from '../images/logo2.png';
 
 function Contact() {
     return (
         <div className="bg">
+            <head>
+                <title>The Plushie Web Scraper You've Been Waiting For</title>
+            </head>
             <nav>
                 <Navigation />
             </nav>
             <div className="form-container mt-5 mb-3">
-                <h1 className="contactTitle mb-5">Contact Us</h1>
-                <form className="contact-form">
+                <h1 className="contactTitle mb-5">Contact<img src={Logo} alt="logo" className='logo'/></h1>
+                <form className="contact-form" action='/process?form=contactus'>
                     <div className="row mb-4">
                         <div className="col">
-                            <input type="text" placeholder="Your Name" className="form-user-icon form-control" name='name' />
+                            <input type="text" placeholder="Your Name" className="form-user-icon form-control name" name='name' />
                         </div>
                         <div className="col">
-                            <input type="email" placeholder="E-mail" className="form-email-icon form-control" name='email' />
+                            <input type="email" placeholder="E-mail" className="form-email-icon form-control email" name='email' />
                         </div>
                     </div>
                     <div className="row mb-4">
@@ -31,8 +35,7 @@ function Contact() {
                     </div>
                 </form>
             </div>
-
-            <footer>
+            <footer className='contactFooter'>
                 <Footer />
             </footer>
         </div >

@@ -35,6 +35,12 @@ function Footer() {
                             <p className="footer-subtext">Send us a message.</p>
                             <button className="btn send-btn"><a href="/contact">SEND MESSAGE</a></button>
                         </section>
+                        <section>
+                            <br />
+                            <p className='footer-topic mb-2'> AFCPlushies Logo Artist </p>
+                            <p className='footer-subtext'>Katherine Le</p>
+                            <a className='footer-subtext' href='https://www.instagram.com/lathering03/'> @lathering03 on Instagram </a>
+                        </section>
                     </div>
                 </div>
             </Container>

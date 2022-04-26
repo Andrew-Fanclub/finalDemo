@@ -2,7 +2,7 @@
   background: no-repeat url("../images/header.png");
   background-color: #181818;
   background-position: top right;
-  background-size: 90vw 100vh;
+  background-size: auto 100vh;
 }
 .title {
   color: #0984e3;
@@ -20,7 +20,6 @@
 }
 .headerContent {
   width: 90vw;
-  height: 80vh;
   margin: 0 auto;
 }
 
@@ -69,6 +68,8 @@
 
 .plushContainer {
   margin: 0 auto;
+  width: auto;
+  height: auto;
 }
 
 .page-link {
@@ -78,4 +79,13 @@
 .page-item.active .page-link {
   background-color: #0984e3;
   border-color: #0984e3;
+}
+
+.center {
+  margin: auto;
+}
+@media only screen and (max-width: 414px) {
+  footer.mainFooter{
+    padding-top: 40rem;
+  }
 }

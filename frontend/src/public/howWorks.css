@@ -35,6 +35,10 @@
   height: auto;
 }
 
+.midWord > img {
+  width: 15rem;
+}
+
 /* 414px and below */
 @media only screen and (max-width: 414px) {
   .progress {
@@ -49,14 +53,15 @@
 
   .progress-info-container {
     width: 80%;
+    margin-bottom: 1px;
   }
 
   .progress-info {
     font-size: 16px;
   }
 
-  .sizeSVG {
-    width: 90%;
+  .sizeIMG {
+    width: 75%;
   }
 }
 

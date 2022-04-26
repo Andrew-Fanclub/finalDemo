@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import React from 'react';
 import "../public/nav.css";
-import Logo from "../images/Logo.png";
+import Logo from "../images/logo2.png";
 
 function Navigation() {
     return (

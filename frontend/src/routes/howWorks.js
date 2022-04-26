@@ -3,6 +3,7 @@ import Navigation from '../components/navbar';
 import Footer from '../components/footer';
 import "../public/howWorks.css";
 
+import Logo from '../images/logo2.png';
 import Search from '../images/howWorksImg/Search.png';
 import Press from '../images/howWorksImg/Button.png';
 import Result from '../images/howWorksImg/Results.png';
@@ -10,11 +11,14 @@ import Result from '../images/howWorksImg/Results.png';
 function HowWorks() {
     return (
         <div className="bg">
+            <head>
+                <title>The Plushie Web Scraper You've Been Waiting For</title>
+            </head>
             <nav>
                 <Navigation />
             </nav>
             <div className="mt-5 mb-3">
-                <h1 className="title mb-5">How <span className="midWord">It</span> Works</h1>
+                <h1 className="title mb-5">How <span className="midWord"><img src={Logo} alt="logo" /></span> Works</h1>
                 <div className="progress">
                     <div className="progress-container">
                         <img src={Search} className="sizeIMG" alt="Create Form Graphic" />

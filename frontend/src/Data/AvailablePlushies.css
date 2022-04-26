@@ -1,7 +1,14 @@
 /* future styling */
 .temp{
   transition: transform 1000ms;
+  width: auto;
 }
 .temp:hover {
   transform: scale(1.25);
+}
+@media only screen and (max-width: 414px) {
+  .temp {
+    height: auto;
+    margin: auto;
+  }
 }

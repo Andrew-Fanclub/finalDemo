@@ -1,11 +1,18 @@
+.bg{
+  margin: auto;
+}
+h1.title {
+  margin: auto;
+}
 .subTitle {
   color: #fdcb6e;
-  margin-left: 2rem;
+  margin: auto;
+  margin-left: 3rem;
 }
 
 .text {
   color: white;
-  margin-left: 3rem;
+  margin-left: 5rem;
 }
 
 .square {
@@ -19,7 +26,7 @@
 }
 
 .team {
-  height: 90vh;
+  height: 20rem;
 }
 
 .teamText {
@@ -33,4 +40,34 @@
 img.team {
   height: 11rem;
   width: 10.5rem;
+}
+
+img.logo {
+  width: 13.5rem;
+}
+@media only screen and (max-width: 414px) {
+  .square {
+    margin: auto;
+    height: 15rem;
+  }
+  img.team {
+    height: 15rem;
+    width: 14.5rem;
+    margin: auto;
+  }
+  .teamTextBold {
+    padding-left: 1rem;
+  }
+  .teamText {
+    padding-left: 1rem;
+  }
+  .subTitle {
+    margin-left: 4rem;
+  }
+  .team {
+    height: 35rem;
+  }
+  footer.whoFooter {
+    padding-top: 12rem;
+  }
 }

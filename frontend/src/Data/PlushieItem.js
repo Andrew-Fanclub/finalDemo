@@ -9,7 +9,7 @@ const PlushieItem = (props) => {
         <div className="plushContainer">
             <img src={props.src} alt="product" />
             <p className='plushTitle'>{props.title}</p>
-            <DynamicStar width={15} height={15} outlined={true} rating={props.rating} />
+            <DynamicStar width={10} height={15} outlined={true} rating={props.rating} />
             <p className='plushPrice'>{`$${price}`}</p>
             <p className='plushShipping'>{`$${shipping} shipping`}</p>
         </div>

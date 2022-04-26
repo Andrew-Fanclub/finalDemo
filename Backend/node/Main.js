@@ -15,51 +15,58 @@ app.disable('x-powered-by');
 
 // Body Parsing
 app.use(morgan('dev'));
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.urlencoded);
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 //cookies for security
 var credentials = require('./components/credentials.js');
-app.use(require('cookie-parser')(credentials.cookieSecret()));
+app.use(require('cookie-parser')(credentials.cookieSecret));
 
 // Set backend port
-app.set('PORT', process.env.PORT);
+app.set('PORT', process.env.PORT || 8080);
 
 // Middleware
-app.use(express.static(path.join(__dirname, "~/frontend/build")));
+app.use(express.static(path.join('/var/www/html/build/')));
+app.use(express.static(path.join('/home/afcplushies/finalDemo/frontend/src/public')))
 
 // Render webpages
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));    
+    res.sendFile(path.join('/var/www/html/build/index.html'));    
 });
 
 // Mailer section for contact page
 app.post('/process?contactUs', function(req, res){
-    let transporter = nodemailer.createTransport({
-        host: "gmail",
-        port: 'PORT',
-        secure: true,
-        auth: {
-            user: 'afcplushies@gmail.com',
-            pass: 'af2plush!3$',
-        }
-    })
+    const mailer = require('nodemailer');
+    const smtp = require('nodemailer-smtp-transport');
+    async function mailjet() {
+        const transporter = mailer.createTransport(
+            smtp({
+                host: 'in.mailjet.com',
+                port: 2525,
+                auth: {
+                    user: process.env.MAILJET_API_KEY || 'a3c15b1909566b0dbc6e30a2d3d78d0e',
+                    pass: process.env.MAILJET_API_SECRET || '1f74e556ce5062e8260466ef9d3a7479',
+                },
+            })
+        )
 
-    let mailOptions = {
-        to: 'afcplushies@gmail.com',
-        subject: req.body.name + req.body.email,
-        text: req.body.message
-    }
-    transporter.sendMail(mailOptions, (error, info) => {
-        if(error){
-            return console.log(error);
-        }
-            console.log('Message %s sent: %s', info.messageId, info.response);
+        const json = await transporter.sendMail({
+            from: req.body.email,
+            to: 'afcplushies@gmail.com',
+            subject: req.body.name,
+            text: req.body.message,
         })
-
-    res.writeHead(301, { Location: 'index.html' })
-    res.end();
+        /*transporter.sendMail(mailOptions, (error, info) => {
+            if(error){
+                return console.log(error);
+            }
+                console.log('Message %s sent: %s', info.messageId, info.response);
+                console.log(json);
+            })*/
+        console.log(json);
+    }
+    res.end('Thank you for your message! The message will now be under review.');
+    mailjet();
 })
 
 // Start listening on port 8080
