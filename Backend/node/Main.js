@@ -36,7 +36,7 @@ app.get('/', (req, res) => {
 
 // Mailer section for contact page
 app.post('/process', function(req, res){
-    const mailer = require('nodemailer');
+    /*const mailer = require('nodemailer');
     const smtp = require('nodemailer-smtp-transport');
     async function mailjet() {
         const transporter = mailer.createTransport(
@@ -56,17 +56,35 @@ app.post('/process', function(req, res){
             subject: req.body.name,
             text: req.body.message,
         })
-        /*transporter.sendMail(mailOptions, (error, info) => {
-            if(error){
-                return console.log(error);
-            }
-                console.log('Message %s sent: %s', info.messageId, info.response);
-                console.log(json);
-            })*/
         console.log(json);
     }
-    res.redirect(303, path.join('/var/www/html/build/index.html'));
-    mailjet();
+    res.sendFile(path.join('/var/www/html/build/index.html'));
+    mailjet();*/
+        const mailjet = require('node-mailjet').connect('a3c15b1909566b0dbc6e30a2d3d78d0e', '1f74e556ce5062e8260466ef9d3a7479');
+        const request = mailjet.post("send", {'version': 'v3.1'}).request({
+                "Messages":[{
+                        "From": {
+                                "Email": req.body.email,
+                                "Name": req.body.name
+                        },
+                        "To": [{
+                                "Email": "afcplushies@gmail.com",
+                                "Name": "Plush"
+                        }],
+                        "Subject": req.body.name,
+                        "TextPart": req.body.message,
+                        "HTMLPart": "<h3>Feedback Message</h3>",
+                        "CustomID": "Feedback Sending"
+                }
+                ]
+        })
+        request.then((result) => {
+                console.log(result.body)
+                res.sendFile(path.join('/var/www/html/build/index.html'));
+        }).catch((err) => {
+                console.log(err.statusCode)
+        })
+        res.sendFile(path.join('/var/www/html/build/index.html'));
 })
 
 // Start listening on port 8080
